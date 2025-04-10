@@ -1,0 +1,28 @@
+<!-- views/pages/upload.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Item</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <h1>Upload a New Item</h1>
+    <form action="/item" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="item[name]" id="name" required><br><br>
+        
+        <label for="price">Price:</label>
+        <input type="number" name="item[price]" id="price" required><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="item[quantity]" id="quantity" required><br><br>
+
+        <label for="dateAdded">dateAdded:</label>
+        <input type="date" name="item[dateAdded]" id="dateAdded"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
